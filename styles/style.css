@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'Fredoka One', cursive;
+  }
+
+.header{
+    font-family: 'Itim', cursive;
+
+}
+
+.balanceContainer{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #F2EFE8;
+    /* margin-left: 200px;
+    margin-right: 200px; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #8BB7DB;
+    border-radius: 20px;
+    padding: 50px;
+    
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    border: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: 'Fredoka One', cursive;
+    
+}
+
+.submit{
+    border: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    background-color: black;
+    color: #F2EFE8;
+    font-family: 'Fredoka One', cursive;
+    opacity:0.5;
+}
+
+
+.submit:hover{
+    background-color: #F2EFE8;
+    color: black;
+    opacity:0.5;
+
+}
+.popup{
+    /* position */
+    position: fixed; 
+    top:5px;
+    right:1px;
+
+    /* dimaensions */
+    width: max-content;
+    border-radius: 5px;
+    text-align: center;
+
+    /* hidden by default */
+    visibility: hidden;
+
+    /* colour */
+    background-color: #F2EFE8;
+}
+
+/* .popup .popupMessage{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+} */
+
+.closeButton{
+    float: right;
+    cursor: pointer;
+    width: 1.5rem;
+    text-align: center;
+}
+
+.closeButton:hover{
+    background-color:#8BB7DB;
+}
+
+/* .showPopup{
+    visibility: visible;
+    
+} */
+
+@media only screen and (min-width: 768px) {
+    .options{
+        flex-direction: row;
+    }
+}
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP-Banking-App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel ='stylesheet' href="/styles/style.css"> 
+</head>
+<body>
+    <h1 class="header">Banking App</h1>
+
+    <div class = 'balanceContainer'>
+        <p>Total Balance:</p>
+        <div class = 'balance'></div>
+    </div>
+
+    <div class ='options'>
+    <div class = 'withdrawContainer'>
+        <p>Please enter withdrawal amount</p>
+        <div class = 'inputContainer'>
+            
+        <input type= 'number' id = 'withdrawal' class="input">
+        <button class = 'submit' id = 'submitWithdraw'>Withdraw</button>
+    </div>
+    </div>
+
+    <div class = 'depositContainer'>
+        <p>Please enter deposit amount</p>
+        <div class = 'inputContainer'>
+        <input type= 'number' id = 'deposit' class="input">
+        <button class = 'submit' id = 'submitDeposit'>Deposit</button>
+    </div>
+    </div>
+</div>
+
+    <!-- error messages -->
+    <div class = 'popup'>
+        <span class ='closeButton'>X</span>
+        <p class = 'popupMessage'></p>
+    </div>
+
+
+
+
+
+     <!-- <p> Enter details to create account</p>
+
+    <div>
+        <label>Name:</label>
+        <input type ='text' id ='userName'>
+    </div>
+    <div>
+        <label>Age</label>
+        <input type = 'number' id ='age'>
+    </div>
+    <div>
+        <button class = 'createAccount'>Create Account</button>
+    </div>
+
+
+    <div class = 'bankHomepage'>
+            <div class ='personalisedHeader'></div>
+
+            <div class = 'balanceSection'>
+                <div class = 'balance'></div>
+            </div>
+
+            
+
+
+            <p> Select One of the following options</p>
+
+            <div class = 'userOptions'>
+                <button class = 'deposit'> Deposit Assets</button>
+                <button class = 'withdraw'>Withdraw Assets</button>
+                <button class = 'details'>View/ Edit Details</button>
+            </div>
+
+            <div class = 'dep_with_dropdown'>
+                <div> 
+                    <label class = 'prompt'></label>
+                    <input type = 'number' id = 'transferAmount'>
+                </div>
+                <button class = 'submit'></button>
+            </div>
+
+            <div class = 'details_dropdown'>
+                <div>
+                    <label>Name:</label>
+                    <input type ='text' id ='userName'>
+                </div>
+
+                    <label>Age</label>
+                    <input type = 'number' id ='age'>
+                </div>
+
+               <button class = 'update'> Update</button>
+        </div>
+
+
+
+    </div> -->
+
+
+    <script src="/scripts/bank.js"></script>
+</body>
+</html>
