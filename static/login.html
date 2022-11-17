@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log-In-Page</title>
+</head>
+
+<body>
+  <div class ='loginContainer'>
+    <h1>Log In </h1>
+
+    <form action ="/login" method = 'post'>
+
+      <div class = 'emailContainer'>
+          <p>Email</p>
+          <div class = 'inputContainer'>
+            <input 
+              type= 'text' 
+              id = 'email' 
+              class="input"
+              placeholder="email"
+              required>
+          </div>
+      </div>
+
+      <div class = 'passwordContainer'>
+          <p>Password</p>
+          <div class = 'inputContainer'>
+            <input 
+              type= 'text' 
+              id = 'password' 
+              class="input"
+              placeholder="Passsword"
+              required>
+          </div>
+      </div>
+
+      <input type="submit" value = 'login'>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<%- include('header.ejs') %>
+<h2 class="greeting">Hi <%=firstName%></h2>
+<div class = 'balanceContainer'>
+    <p>Total Balance:</p>
+    <div class = 'balance'></div>
+</div>
+
+<div class ='options'>
+<div class = 'withdrawContainer'>
+    <p>Please enter withdrawal amount</p>
+    <div class = 'inputContainer'>
+        
+    <input type= 'number' id = 'withdrawal' class="input">
+    <button class = 'submit' id = 'submitWithdraw'>Withdraw</button>
+</div>
+</div>
+
+<div class = 'depositContainer'>
+    <p>Please enter deposit amount</p>
+    <div class = 'inputContainer'>
+    <input type= 'number' id = 'deposit' class="input">
+    <button class = 'submit' id = 'submitDeposit'>Deposit</button>
+</div>
+</div>
+</div>
+
+<!-- error messages -->
+<div class = 'popup'>
+    <span class ='closeButton'>X</span>
+    <p class = 'popupMessage'></p>
+</div>
+<%- include('footer.ejs') %>
+
