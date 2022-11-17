@@ -1,47 +1,35 @@
 //import packages
-const express = require('express')
-const path =  require('path')
-const bodyParser = require('body-parser')
-const session = require('express-session')
-
-// import db
-const seed = require('./db/seed')
-
-//import routers 
 const loginRouter = require('./routes/login')
-
+const session = require('express-session')
+const bodyParser = require('body-parser')
+const express = require('express')
+const seed = require('./db/seed')
+const path =  require('path')
 const app = express()
 
-//use
+
+//middleware that parses the incoming requests 
+app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json())
-app.use(express.static(path.join(__dirname, 'static')))
-app.use('/login',loginRouter)
-app.use(session({
-	secret: 'secret',
-	resave: true,
-	saveUninitialized: true
-}));
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+//static files
+app.use(express.static('public'))
+app.use('/css', express.static(__dirname + 'public/css'))
+app.use('/js', express.static(__dirname + 'public/js'))
 
 //set
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs' )
 
-
-// 
-// app.get('/', (req,res) =>{
-// 	// Render login template
-// res.sendFile(path.join(__dirname + '/login.html'));
-// const path = require('path')
-// app.use('./static', express.static(path.join(__dirname, 'public')))
-// });
-
+//routers
+app.use('/login',loginRouter)
 
 
 app.listen(4000, async() => {
   // await seed()
   console.log('listening on port 4000 ')
 })
-
 
 module.exports = app
